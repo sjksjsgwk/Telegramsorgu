@@ -60,19 +60,7 @@ def kanal_kontrol(uid, chat_id):
 
     # KONTROL ET BUTONU
     kb.add(types.InlineKeyboardButton("✅ Kontrol Et", callback_data="kontrol_et"))
-
-    with open("gereklikanal.png", "rb") as p:
-        bot.send_photo(
-            chat_id,
-            p,
-            caption=(
-                "Önce Gerekli Kanallara Katılman Gerek.\n\n"
-                "Kanallara Katıldıktan Sonra /komutlar Aracılığı İle "
-                "Güvenli Ve Uzun Ömür Erişim Sağlayın."
-            ),
-            reply_markup=kb
-        )
-
+    
     return False
 
 
