@@ -162,8 +162,10 @@ def start(message):
         f"➡️ Başlamak için /komutlar yaz."
     )
 
-    with open("logo.PNG", "rb") as p:
-        bot.send_photo(message.chat.id, p, caption=caption)
+    bot.send_message(
+    message.chat.id,
+    caption
+)
 
 @bot.message_handler(commands=["komutlar"])
 def komutlar(message):
